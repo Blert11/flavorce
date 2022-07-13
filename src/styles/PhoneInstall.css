@@ -1,0 +1,72 @@
+.install-section {
+    max-width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #df2c34;
+    border-radius: 25px;
+    height: 250px;
+    margin-top: 250px;
+}
+
+.app-text-div{
+    padding-left: 50px;
+    width: 1000px;
+    position: relative;
+    top: -20px;
+}
+
+.app-text-div h1{
+    color: white;
+    font-size: 40px;
+}
+
+.app-text-div p{
+    color: white;
+    position: relative;
+    top: -5px;
+}
+
+.app-text-div a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 8px 20px;
+    position: relative;
+    top: 12px;
+    border-radius: 100px;
+    transition: .25s;
+}
+
+
+.app-text-div a:hover{
+    color: #df2c34;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.app-div{
+    padding-right: 50px;
+    margin-top: -125px;
+}
+
+.app-div img{
+    width: 375px;
+    float: right;
+}
+
+@media screen and (max-width: 800px){
+
+    .install-section{
+        margin: 0 10px;
+        text-align: center;
+        height: 275px;
+        box-shadow: 0 0 10px #df2c358c;
+    }
+
+    .app-div img{
+        display: none;
+    }
+}

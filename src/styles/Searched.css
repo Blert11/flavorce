@@ -1,0 +1,69 @@
+.searched-div {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-searched {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.grid-card {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    transition: .25s;
+}
+
+.grid-card:hover {
+    box-shadow: 0 0 10px rgba(223, 44, 52, 0.7);
+}
+
+.grid-card img {
+    border-radius: 10px;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.grid-card h4 {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%, 0%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 800px) {
+    .grid-searched {
+        margin: 0 10px;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-card {
+        height: 200px;
+    }
+
+    .grid-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
