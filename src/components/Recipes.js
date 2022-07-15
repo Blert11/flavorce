@@ -8,7 +8,7 @@ const Recipes = () => {
     const [recipe, setRecipe] = useState([])
 
     const getRecipe = async () => {
-        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=4`)
+        const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=51d0e725a5f9407891c4892e29d1c70a&number=4`)
         const data = await api.json()
         console.log(data)
         setRecipe(data.recipes)
